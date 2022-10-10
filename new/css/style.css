@@ -90,8 +90,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 30px;
     gap: 20px;
 }
-
-
 /* HEADER */
 
 .header {
@@ -301,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.pets__wrapper {
+.pets__inner {
     position: relative;
     display: flex;
     justify-content: center;
@@ -803,7 +801,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /* PETS */
 
-    .pets__wrapper {
+    .pets__inner {
         gap: 29px;
         row-gap: 92px;
     }
@@ -976,7 +974,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .testimonials__decor {
-        bottom: -16%;
+        bottom: -10%;
         right: -2%;
     }
 
@@ -1162,9 +1160,7 @@ h1, h2, h3, h4, h5, h6 {
         transform: rotate(180deg);
     }
 
-    
-
-
+  
     /*-----------------------------*/
 
     /* PETS */
@@ -1299,7 +1295,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 100px;
     }
 
-    .pets__wrapper {
+    .pets__inner {
         margin-bottom: 63px;
     }
 
@@ -1404,7 +1400,7 @@ h1, h2, h3, h4, h5, h6 {
 /* 635*/
 @media(max-width: 635px) {
     /* PETS */
-    .pets__wrapper {
+    .pets__inner {
         row-gap: 20px;
     }
 
@@ -1685,7 +1681,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 60px;
     }
 
-    .pets__wrapper {
+    .pets__inner {
         margin-bottom: 28px;
     }
 
