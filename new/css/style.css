@@ -613,6 +613,58 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
+
+
+.testimonials__popup {
+    width: 267px;
+    background-color: #333841;
+    position: fixed;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    cursor:default;
+}
+
+.testimonials__info-popup {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.testimonials__img-popup {
+    height: 37px;
+}
+
+.testimonials__author-title-popup {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.testimonials__author-text-popup {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.testimonials__text-popup {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.testimonials__popup-exit {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
 /* / TESTIMONIALS */
 
 /* FOOTER */
@@ -974,7 +1026,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .testimonials__decor {
-        bottom: -10%;
+        bottom: -16%;
         right: -2%;
     }
 
@@ -1191,6 +1243,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 600px;
         height: 110px;
         margin: 0 auto 15px auto;
+        cursor: pointer;
         
     }
 
@@ -1199,6 +1252,13 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
     }
    
+    .testimonials__range {
+        display: none;
+    }
+
+    .testimonials__decor {
+        bottom: -23%;
+    }
 }
 
 /* 660 */
@@ -1233,6 +1293,8 @@ h1, h2, h3, h4, h5, h6 {
         top: 47%;
         left: 19%;
     }
+
+
 
     /*-----------------------------*/
     /* FAVORITE */
@@ -1371,6 +1433,10 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 80px;
     }
     
+    .testimonials__card {
+        cursor: pointer;
+    }
+
     .testimonials__title {
         margin-bottom: 28px;
     }
@@ -1391,7 +1457,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .testimonials__decor {
         width: 111px;
-        bottom: 9%;
+        bottom: -9%;
     }
 
     
