@@ -7,8 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    
     <title>Online-Zoo</title>
 </head>
 <body>
@@ -44,15 +47,18 @@
                         <div class="icon__2"></div>
                         <div class="icon__3"></div>
                     </div>
-
-                    <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Map</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Zoos</a></li>
-                        <li class="menu__item"><a href="./donate/index.html" class="menu__link">Donate</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
-                        <li class="menu__item"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="menu__link">Designed by ©</a></li>
-                    </ul>
+                    <div class="mobile__menu-menu display-none">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Map</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Zoos</a></li>
+                            <li class="menu__item"><a href="./donate/index.html" class="menu__link">Donate</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+                            <li class="menu__item"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="menu__link">Designed by ©</a></li>
+                            <li class="menu__item"><a href="#" class="menu__exit">Close menu</a></li>
+                        </ul>
+                    </div>
+                   
                 </nav>
             </div>
         </div>
@@ -104,122 +110,228 @@
 
         <section class="pets">
             <div class="container">
+                
                 <div class="pets__inner">
-                    <div class="pets__card">
-                        <div class="pets__img">
-                            <img src="./images/main/pets/pand.jpg" alt="" class="pets-img">
-                        </div>
-                        <div class="pets__card-inner">
-                            <div class="pets__card-content">
-                                <h2 class="pets__card-title">
-                                    Giat Pandas
-                                </h2>
-                                <p class="pets__card-text">
-                                    Native to Southwest China
-                                </p>
+
+                    <!-- Additional required wrapper -->
+                    <div class="pets__wrapper">
+                
+                        <!-- Slides -->
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/pand.jpg" alt="" class="pets-img">
                             </div>
-
-                            <img src="./images/main/pets/banana-bamboo_icon.svg" alt="" class="pets__card-eat">
-                        </div>
-                    </div>
-
-                    <div class="pets__card">
-                        <div class="pets__img">
-                            <img src="./images/main/pets/eagles.jpg" alt="" class="pets-img">
-                        </div>
-                        <div class="pets__card-inner">
-                            <div class="pets__card-content">
-                                <h2 class="pets__card-title">
-                                    Eagles
-                                </h2>
-                                <p class="pets__card-text">
-                                    Native to South America
-                                </p>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Giat Pandas
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Southwest China
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/banana-bamboo_icon.svg" alt="" class="pets__card-eat">
                             </div>
-
-                            <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
                         </div>
-                    </div>
-
-                    <div class="pets__card">
-                        <div class="pets__img">
-                            <img src="./images/main/pets/gorillas.jpg" alt="" class="pets-img">
-                        </div>
-                        <div class="pets__card-inner">
-                            <div class="pets__card-content">
-                                <h2 class="pets__card-title">
-                                    Gorillas
-                                </h2>
-                                <p class="pets__card-text">
-                                    Native to Congo
-                                </p>
+    
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/eagles.jpg" alt="" class="pets-img">
                             </div>
-
-                            <img src="./images/main/pets/banana-bamboo_icon.svg" alt="" class="pets__card-eat">
-                        </div>
-                    </div>
-
-                    <div class="pets__card">
-                        <div class="pets__img">
-                            <img src="./images/main/pets/sloth.jpg" alt="" class="pets-img">
-                        </div>
-                        <div class="pets__card-inner">
-                            <div class="pets__card-content">
-                                <h2 class="pets__card-title">
-                                    Two-Toed sloth
-                                </h2>
-                                <p class="pets__card-text">
-                                    Mesoamerica South America
-                                </p>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Eagles
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to South America
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
                             </div>
-
-                            <img src="./images/main/pets/banana-bamboo_icon.svg" alt="" class="pets__card-eat">
                         </div>
-                    </div>
-
-                    <div class="pets__card">
-                        <div class="pets__img">
-                            <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
-                        </div>
-                        <div class="pets__card-inner">
-                            <div class="pets__card-content">
-                                <h2 class="pets__card-title">
-                                    Cheetahs
-                                </h2>
-                                <p class="pets__card-text">
-                                    Native to Africa
-                                </p>
+    
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/gorillas.jpg" alt="" class="pets-img">
                             </div>
-
-                            <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
-                        </div>
-                    </div>
-
-                    <div class="pets__card">
-                        <div class="pets__img">
-                            <img src="./images/main/pets/penguins.jpg" alt="" class="pets-img">
-                        </div>
-                        <div class="pets__card-inner">
-                            <div class="pets__card-content">
-                                <h2 class="pets__card-title">
-                                    Penguins
-                                </h2>
-                                <p class="pets__card-text">
-                                    Native to Antactica
-                                </p>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Gorillas
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Congo
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/banana-bamboo_icon.svg" alt="" class="pets__card-eat">
                             </div>
-
-                            <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
                         </div>
-                    </div>
+    
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/sloth.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Two-Toed sloth
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Mesoamerica South America
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/banana-bamboo_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
+    
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Cheetahs
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Africa
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
+    
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Cheetahs
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Africa
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
 
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Cheetahs
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Africa
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
+
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Cheetahs
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Africa
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
+
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Cheetahs
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Africa
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
+
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Cheetahs
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Africa
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
+
+                        <div class="pets__card">
+                            <div class="pets__img">
+                                <img src="./images/main/pets/cheetahs.jpg" alt="" class="pets-img">
+                            </div>
+                            <div class="pets__card-inner">
+                                <div class="pets__card-content">
+                                    <h2 class="pets__card-title">
+                                        Cheetahs
+                                    </h2>
+                                    <p class="pets__card-text">
+                                        Native to Africa
+                                    </p>
+                                </div>
+    
+                                <img src="./images/main/pets/meet-fish_icon.svg" alt="" class="pets__card-eat">
+                            </div>
+                        </div>
+
+                                                
+    
+                
+                    </div>
+                
+                    <!-- If we need pagination -->
+                
+                    <!-- If we need navigation buttons -->
                     <div class="pets__arrow-prev pets__arrow">
                         <img src="./images/main/pets/arrow-prev.svg" alt="" class="arrow__prev">
                     </div>
-
+    
                     <div class="pets__arrow-next pets__arrow">
                         <img src="./images/main/pets/arrow-next.svg" alt="" class="arrow__next">
                     </div>
+                
+                
                 </div>
 
                 <button class="pets__btn btn">Choose your favorite</button>
@@ -479,5 +591,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/bm.js"></script>
+    <script src="./script/slider.js"></script>
 </body>
 </html>
